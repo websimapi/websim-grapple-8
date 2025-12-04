@@ -112,7 +112,7 @@ export class Game {
         audioLoader.load('./sfx_engine.mp3', (buffer) => {
             this.engineSound.setBuffer(buffer);
             this.engineSound.setLoop(true);
-            this.engineSound.setVolume(0.06);
+            this.engineSound.setVolume(0.012);
             if (this.isRunning && !this.engineSound.isPlaying) this.engineSound.play();
         });
         audioLoader.load('./sfx_grapple_shoot.mp3', (buffer) => {
